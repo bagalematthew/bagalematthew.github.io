@@ -1,0 +1,10 @@
+:root{
+  --primary1:#2563eb;
+  --primary2:#38bdf8;
+  --secondary:#ffffff;
+  --tertiary:#c0c0c0;
+  --bg:#0b0f17; --panel:#0e1422; --card:#0f172a; --text:var(--secondary); --muted:var(--tertiary); --ring:#1f2937;
+}
+body{background:var(--bg);color:var(--text);font-family:sans-serif}
+.gradient{background:linear-gradient(90deg,var(--primary1),var(--primary2));-webkit-background-clip:text;color:transparent}
+.btn-primary{background:linear-gradient(90deg,var(--primary1),var(--primary2));color:var(--secondary)}

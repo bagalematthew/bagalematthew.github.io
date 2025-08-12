@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WaitMate — Real‑Time Wait Intelligence</title>
+  <meta name="description" content="WaitMate gives real‑time wait intelligence for restaurants, so you never waste a night standing in line.">
+  <meta name="theme-color" content="#0b0f17">
+  <link rel="icon" href="assets/favicon.png">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="logo" href="#top">
+      <svg class="wm" viewBox="0 0 32 24" width="28" height="21" aria-hidden="true"><path d="M2 22L8 2l8 20 8-20 6 20" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>WaitMate</span><span class="dot">.</span>
+    </a>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#how">How it works</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+      <button id="themeToggle" class="btn-ghost" aria-label="Toggle dark mode">🌓</button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="glow"></div>
+      <div class="hero-inner">
+        <p class="eyebrow">enton‑style • finance‑grade UX</p>
+        <h1 class="display">
+          Real‑time <span class="gradient">Wait Intelligence</span><br/>
+          zero guesswork.
+        </h1>
+        <p class="lead">Skip the line. WaitMate predicts and aggregates live restaurant wait times across the city with signal‑rich data and machine‑learning models.</p>
+        <div class="cta-row">
+          <a class="btn-primary" href="#contact">Request Access</a>
+          <a class="btn-ghost" href="https://github.com" target="_blank" rel="noopener">View on GitHub</a>
+        </div>
+        <div class="badges">
+          <span class="badge">NYC Coverage</span>
+          <span class="badge">Dark Mode</span>
+          <span class="badge">SwiftUI + Maps</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <h2>Built like a trading desk, for dining.</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Live Wait Feed</h3>
+          <p>Streamed signals from users + partner venues. Data is deduped, validated, and ranked for credibility.</p>
+          <code class="snippet">wait = model.predict(venue, time, weather, events)</code>
+        </article>
+        <article class="card">
+          <h3>Smart Alerts</h3>
+          <p>Set targets like “<em>Lucien under 20 min</em>” and get a ping when conditions hit your threshold.</p>
+          <code class="snippet">alert.on("lucien", lt=20).notify("push")</code>
+        </article>
+        <article class="card">
+          <h3>Neighborhood Heatmap</h3>
+          <p>SoHo to LES — see where waits are cooling down in real‑time with a clean, readable map layer.</p>
+          <code class="snippet">tiles.heatmap(city="NYC", layer="waits")</code>
+        </article>
+        <article class="card">
+          <h3>Shareable Lists</h3>
+          <p>Curate “Date Night / Zero Line” or “After‑Work Bites” and share with friends in one tap.</p>
+          <code class="snippet">list.create("date-night", sort="low_wait")</code>
+        </article>
+      </div>
+    </section>
+
+    <section id="how" class="section">
+      <h2>How it works</h2>
+      <ol class="steps">
+        <li><span>1</span> Ingest live signals from users, venues, weather, and events.</li>
+        <li><span>2</span> Normalize, de‑spam, and model predicted wait distributions.</li>
+        <li><span>3</span> Surface actionable insights: alerts, rankings, and heatmaps.</li>
+      </ol>
+    </section>
+
+    <section id="pricing" class="section">
+      <h2>Pricing</h2>
+      <div class="grid three">
+        <article class="card price">
+          <h3>Free</h3>
+          <p class="price-tag">$0</p>
+          <ul>
+            <li>NYC coverage</li>
+            <li>Live feed (rate‑limited)</li>
+            <li>2 alerts</li>
+          </ul>
+          <a class="btn-primary" href="#contact">Get Started</a>
+        </article>
+        <article class="card price featured">
+          <h3>Pro</h3>
+          <p class="price-tag">$4.99/mo</p>
+          <ul>
+            <li>Unlimited alerts</li>
+            <li>Priority signal quality</li>
+            <li>Personal lists & sharing</li>
+          </ul>
+          <a class="btn-primary" href="#contact">Start Pro</a>
+        </article>
+        <article class="card price">
+          <h3>Teams</h3>
+          <p class="price-tag">Custom</p>
+          <ul>
+            <li>Concierge partners</li>
+            <li>Embeddable widgets</li>
+            <li>API access</li>
+          </ul>
+          <a class="btn-ghost" href="#contact">Talk to us</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="faq" class="section">
+      <h2>FAQ</h2>
+      <details class="faq"><summary>Is this really free to host?</summary><p>Yep. This site can be deployed on GitHub Pages at no cost.</p></details>
+      <details class="faq"><summary>Can I use a custom domain?</summary><p>Yes — point your domain’s DNS to GitHub Pages in your repository settings.</p></details>
+      <details class="faq"><summary>Is there an iOS app?</summary><p>WaitMate runs on SwiftUI. Join the beta via the “Request Access” button.</p></details>
+    </section>
+
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p>Want early access or partnership info? Email <a href="mailto:you@example.com">you@example.com</a>.</p>
+      <div class="socials">
+        <a href="https://github.com/yourhandle" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+        <a href="https://www.linkedin.com/in/yourhandle" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+        <a href="mailto:you@example.com" aria-label="Email">Email</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> WaitMate. Built for GitHub Pages.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
